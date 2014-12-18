@@ -1,12 +1,24 @@
-package CtCIDataStructures;
+// package Question2_3;
 
-/*
-Linked List Node Implementation
-from CtCI 
-@author: prakash.natarajan@outlook.com
-*/
+import java.util.*;
+// import CtCIDataStructurs.CtCIDataStructures.LinkedListNode;
 
-public class LinkedListNode {
+public class Question {
+	public Question() {}
+	
+	public static void main(String[] args) {
+		LinkedListNode first = new LinkedListNode(1, null, null);
+		LinkedListNode root = first;
+		for(int i = 2; i < 10; i++) {
+			LinkedListNode sec = new LinkedListNode(i, null, null);
+			first.setNext(sec);
+			sec.setPrev(first);
+			first = sec;
+		}
+		System.out.println(root.printNode());
+	}
+}
+class LinkedListNode {
 	int data;
 	LinkedListNode next;
 	LinkedListNode prev;
