@@ -1,4 +1,9 @@
 ##  ((n & (n-1)) == 0)
+### Question
+````
+Explain what the following code does: ((n & (n-1)) == 0)
+````
+
 
 ### Explanation:
 [Example code which is already Implemented](https://github.com/AlgorithmCrackers/Interview-Questions/blob/master/Bit-Hacks/NextPowerof2/NextPowerOf2.swift)
