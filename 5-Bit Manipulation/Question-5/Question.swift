@@ -32,6 +32,14 @@ func numberOf1(var c:Int) -> Int { //O(number of bits in c)
 //tested in Playground
 //bitsRequiredToConvertAtoB(31, 30)
 
+func bitsRequiredToConvertAtoB_Simplified(a:Int, b:Int) -> Int {
+    var count = 0
+    for var n = a ^ b; n != 0; n = n & (n - 1) {
+        count++
+    }
+    return count
+}
+
 
 
 
