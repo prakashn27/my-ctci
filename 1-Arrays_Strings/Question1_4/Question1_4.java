@@ -2,7 +2,7 @@
 author: Prakash N
 mail: mail@prakashn.com
 
-Write a method to decide if two strings are anagrams or not
+Write a method to decide if two strings are anagrams or not.
 */
 
 import java.util.*;
@@ -10,7 +10,9 @@ import java.lang.*;
 import java.io.*;
 
 /* 
-@param: two strings which needed to be compared */
+@param: two strings which needed to be compared 
+@return: true if they are anagrams false otherwise
+*/
 class Question1_4
 {
 	boolean isAnagram(String str1, String str2) {
