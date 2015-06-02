@@ -43,7 +43,7 @@ class Question-1
         String s= (new Integer(data)).toString();
         Node prev = null;
         Node head = null;
-        for(char c : s.toCharArray()) {
+        for(Character c : s.toCharArray()) {
         	System.out.println(c);
         	Node obj=new Node(Character.getNumericValue(c),null);
             if(prev == null) {
