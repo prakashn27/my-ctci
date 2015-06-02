@@ -22,10 +22,12 @@ class Question-1
         int result=object.GetNumber(one) + object.GetNumber(one1);
         System.out.println(result);
        	Node finalObject=object.SplitNumber(result);
+       	//printing the final result
         object.Display(finalObject);
     }
     
-        public int GetNumber(Node head) {
+    //get the int value of the number
+    public int GetNumber(Node head) {
         int sum=0;
         int multiplier=1;
         while(head!=null) {
@@ -36,6 +38,7 @@ class Question-1
         return sum;
     }
     
+    //split int Linked List
     public Node SplitNumber(int data){
         String s= (new Integer(data)).toString();
         Node prev = null;
